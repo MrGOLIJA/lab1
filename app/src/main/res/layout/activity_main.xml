@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:id="@+id/Layout"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
@@ -19,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="45dp"
-            android:textColor="@color/black"
-            android:text="@string/hello" />
+            android:text="@string/hello"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button"
@@ -28,8 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="changeText"
-            android:text="Нажми на меня!" />
-
+            android:text="@string/buttontext" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
